@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C92DA9C525285BF200D40802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9C425285BF200D40802 /* AppDelegate.swift */; };
+		C92DA9C725285BF200D40802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9C625285BF200D40802 /* SceneDelegate.swift */; };
+		C92DA9C925285BF200D40802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9C825285BF200D40802 /* ViewController.swift */; };
+		C92DA9CF25285BF200D40802 /* KanjiFlipper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9CD25285BF200D40802 /* KanjiFlipper.xcdatamodeld */; };
+		C92DA9D125285BF300D40802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92DA9D025285BF300D40802 /* Assets.xcassets */; };
+		C92DA9DF25285BF400D40802 /* KanjiFlipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9DE25285BF400D40802 /* KanjiFlipperTests.swift */; };
+		C92DA9EA25285BF400D40802 /* KanjiFlipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9E925285BF400D40802 /* KanjiFlipperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C92DA9DB25285BF400D40802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92DA9B925285BF100D40802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C92DA9C025285BF100D40802;
+			remoteInfo = KanjiFlipper;
+		};
+		C92DA9E625285BF400D40802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92DA9B925285BF100D40802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C92DA9C025285BF100D40802;
+			remoteInfo = KanjiFlipper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C92DA9C125285BF200D40802 /* KanjiFlipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiFlipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92DA9C425285BF200D40802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C92DA9C625285BF200D40802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C92DA9C825285BF200D40802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C92DA9CE25285BF200D40802 /* KanjiFlipper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KanjiFlipper.xcdatamodel; sourceTree = "<group>"; };
+		C92DA9D025285BF300D40802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C92DA9D525285BF300D40802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C92DA9DA25285BF400D40802 /* KanjiFlipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanjiFlipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92DA9DE25285BF400D40802 /* KanjiFlipperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiFlipperTests.swift; sourceTree = "<group>"; };
+		C92DA9E025285BF400D40802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C92DA9E525285BF400D40802 /* KanjiFlipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanjiFlipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92DA9E925285BF400D40802 /* KanjiFlipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiFlipperUITests.swift; sourceTree = "<group>"; };
+		C92DA9EB25285BF400D40802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C92DA9BE25285BF100D40802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92DA9D725285BF400D40802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92DA9E225285BF400D40802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C92DA9B825285BF100D40802 = {
+			isa = PBXGroup;
+			children = (
+				C92DA9C325285BF200D40802 /* KanjiFlipper */,
+				C92DA9DD25285BF400D40802 /* KanjiFlipperTests */,
+				C92DA9E825285BF400D40802 /* KanjiFlipperUITests */,
+				C92DA9C225285BF200D40802 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C92DA9C225285BF200D40802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C92DA9C125285BF200D40802 /* KanjiFlipper.app */,
+				C92DA9DA25285BF400D40802 /* KanjiFlipperTests.xctest */,
+				C92DA9E525285BF400D40802 /* KanjiFlipperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C92DA9C325285BF200D40802 /* KanjiFlipper */ = {
+			isa = PBXGroup;
+			children = (
+				C92DA9C425285BF200D40802 /* AppDelegate.swift */,
+				C92DA9C625285BF200D40802 /* SceneDelegate.swift */,
+				C92DA9C825285BF200D40802 /* ViewController.swift */,
+				C92DA9D025285BF300D40802 /* Assets.xcassets */,
+				C92DA9D525285BF300D40802 /* Info.plist */,
+				C92DA9CD25285BF200D40802 /* KanjiFlipper.xcdatamodeld */,
+			);
+			path = KanjiFlipper;
+			sourceTree = "<group>";
+		};
+		C92DA9DD25285BF400D40802 /* KanjiFlipperTests */ = {
+			isa = PBXGroup;
+			children = (
+				C92DA9DE25285BF400D40802 /* KanjiFlipperTests.swift */,
+				C92DA9E025285BF400D40802 /* Info.plist */,
+			);
+			path = KanjiFlipperTests;
+			sourceTree = "<group>";
+		};
+		C92DA9E825285BF400D40802 /* KanjiFlipperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C92DA9E925285BF400D40802 /* KanjiFlipperUITests.swift */,
+				C92DA9EB25285BF400D40802 /* Info.plist */,
+			);
+			path = KanjiFlipperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C92DA9C025285BF100D40802 /* KanjiFlipper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C92DA9EE25285BF400D40802 /* Build configuration list for PBXNativeTarget "KanjiFlipper" */;
+			buildPhases = (
+				C92DA9BD25285BF100D40802 /* Sources */,
+				C92DA9BE25285BF100D40802 /* Frameworks */,
+				C92DA9BF25285BF100D40802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KanjiFlipper;
+			productName = KanjiFlipper;
+			productReference = C92DA9C125285BF200D40802 /* KanjiFlipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C92DA9D925285BF400D40802 /* KanjiFlipperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C92DA9F125285BF400D40802 /* Build configuration list for PBXNativeTarget "KanjiFlipperTests" */;
+			buildPhases = (
+				C92DA9D625285BF400D40802 /* Sources */,
+				C92DA9D725285BF400D40802 /* Frameworks */,
+				C92DA9D825285BF400D40802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C92DA9DC25285BF400D40802 /* PBXTargetDependency */,
+			);
+			name = KanjiFlipperTests;
+			productName = KanjiFlipperTests;
+			productReference = C92DA9DA25285BF400D40802 /* KanjiFlipperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C92DA9E425285BF400D40802 /* KanjiFlipperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C92DA9F425285BF400D40802 /* Build configuration list for PBXNativeTarget "KanjiFlipperUITests" */;
+			buildPhases = (
+				C92DA9E125285BF400D40802 /* Sources */,
+				C92DA9E225285BF400D40802 /* Frameworks */,
+				C92DA9E325285BF400D40802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C92DA9E725285BF400D40802 /* PBXTargetDependency */,
+			);
+			name = KanjiFlipperUITests;
+			productName = KanjiFlipperUITests;
+			productReference = C92DA9E525285BF400D40802 /* KanjiFlipperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C92DA9B925285BF100D40802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C92DA9C025285BF100D40802 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					C92DA9D925285BF400D40802 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = C92DA9C025285BF100D40802;
+					};
+					C92DA9E425285BF400D40802 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = C92DA9C025285BF100D40802;
+					};
+				};
+			};
+			buildConfigurationList = C92DA9BC25285BF100D40802 /* Build configuration list for PBXProject "KanjiFlipper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C92DA9B825285BF100D40802;
+			productRefGroup = C92DA9C225285BF200D40802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C92DA9C025285BF100D40802 /* KanjiFlipper */,
+				C92DA9D925285BF400D40802 /* KanjiFlipperTests */,
+				C92DA9E425285BF400D40802 /* KanjiFlipperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C92DA9BF25285BF100D40802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92DA9D125285BF300D40802 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92DA9D825285BF400D40802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92DA9E325285BF400D40802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C92DA9BD25285BF100D40802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92DA9CF25285BF200D40802 /* KanjiFlipper.xcdatamodeld in Sources */,
+				C92DA9C925285BF200D40802 /* ViewController.swift in Sources */,
+				C92DA9C525285BF200D40802 /* AppDelegate.swift in Sources */,
+				C92DA9C725285BF200D40802 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92DA9D625285BF400D40802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92DA9DF25285BF400D40802 /* KanjiFlipperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92DA9E125285BF400D40802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92DA9EA25285BF400D40802 /* KanjiFlipperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C92DA9DC25285BF400D40802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C92DA9C025285BF100D40802 /* KanjiFlipper */;
+			targetProxy = C92DA9DB25285BF400D40802 /* PBXContainerItemProxy */;
+		};
+		C92DA9E725285BF400D40802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C92DA9C025285BF100D40802 /* KanjiFlipper */;
+			targetProxy = C92DA9E625285BF400D40802 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C92DA9EC25285BF400D40802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C92DA9ED25285BF400D40802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C92DA9EF25285BF400D40802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JQ972YWZS;
+				INFOPLIST_FILE = KanjiFlipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ara-dev.kanji-flipper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C92DA9F025285BF400D40802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JQ972YWZS;
+				INFOPLIST_FILE = KanjiFlipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ara-dev.kanji-flipper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C92DA9F225285BF400D40802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JQ972YWZS;
+				INFOPLIST_FILE = KanjiFlipperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AraDev.KanjiFlipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanjiFlipper.app/KanjiFlipper";
+			};
+			name = Debug;
+		};
+		C92DA9F325285BF400D40802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JQ972YWZS;
+				INFOPLIST_FILE = KanjiFlipperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AraDev.KanjiFlipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanjiFlipper.app/KanjiFlipper";
+			};
+			name = Release;
+		};
+		C92DA9F525285BF400D40802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JQ972YWZS;
+				INFOPLIST_FILE = KanjiFlipperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AraDev.KanjiFlipperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KanjiFlipper;
+			};
+			name = Debug;
+		};
+		C92DA9F625285BF400D40802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JQ972YWZS;
+				INFOPLIST_FILE = KanjiFlipperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AraDev.KanjiFlipperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KanjiFlipper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C92DA9BC25285BF100D40802 /* Build configuration list for PBXProject "KanjiFlipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92DA9EC25285BF400D40802 /* Debug */,
+				C92DA9ED25285BF400D40802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C92DA9EE25285BF400D40802 /* Build configuration list for PBXNativeTarget "KanjiFlipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92DA9EF25285BF400D40802 /* Debug */,
+				C92DA9F025285BF400D40802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C92DA9F125285BF400D40802 /* Build configuration list for PBXNativeTarget "KanjiFlipperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92DA9F225285BF400D40802 /* Debug */,
+				C92DA9F325285BF400D40802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C92DA9F425285BF400D40802 /* Build configuration list for PBXNativeTarget "KanjiFlipperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92DA9F525285BF400D40802 /* Debug */,
+				C92DA9F625285BF400D40802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C92DA9CD25285BF200D40802 /* KanjiFlipper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C92DA9CE25285BF200D40802 /* KanjiFlipper.xcdatamodel */,
+			);
+			currentVersion = C92DA9CE25285BF200D40802 /* KanjiFlipper.xcdatamodel */;
+			path = KanjiFlipper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C92DA9B925285BF100D40802 /* Project object */;
+}
