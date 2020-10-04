@@ -100,9 +100,22 @@
 				C92DA9C425285BF200D40802 /* AppDelegate.swift */,
 				C92DA9C625285BF200D40802 /* SceneDelegate.swift */,
 				C92DA9C825285BF200D40802 /* ViewController.swift */,
-				C92DA9D025285BF300D40802 /* Assets.xcassets */,
 				C92DA9D525285BF300D40802 /* Info.plist */,
-				C92DA9CD25285BF200D40802 /* KanjiFlipper.xcdatamodeld */,
+				C98F99FA252A5B1A0014B038 /* Assets */,
+				C98F99EF252A5AFA0014B038 /* Strings */,
+				C98F99F1252A5AFA0014B038 /* Resources */,
+				C98F99F9252A5AFA0014B038 /* Utils */,
+				C98F99F3252A5AFA0014B038 /* Managers */,
+				C98F99F6252A5AFA0014B038 /* Extensions */,
+				C98F99F8252A5AFA0014B038 /* Protocols */,
+				C98F99F0252A5AFA0014B038 /* DataBaseIO */,
+				C98F99F2252A5AFA0014B038 /* DataModel */,
+				C98F99F7252A5AFA0014B038 /* Coordinators */,
+				C98F99EC252A5AFA0014B038 /* Repositories */,
+				C98F99ED252A5AFA0014B038 /* Cells */,
+				C98F99F4252A5AFA0014B038 /* Views */,
+				C98F99EE252A5AFA0014B038 /* ViewControllers */,
+				C98F99F5252A5AFA0014B038 /* ViewModels */,
 			);
 			path = KanjiFlipper;
 			sourceTree = "<group>";
@@ -123,6 +136,113 @@
 				C92DA9EB25285BF400D40802 /* Info.plist */,
 			);
 			path = KanjiFlipperUITests;
+			sourceTree = "<group>";
+		};
+		C98F99EC252A5AFA0014B038 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C98F99ED252A5AFA0014B038 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C98F99EE252A5AFA0014B038 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C98F99EF252A5AFA0014B038 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		C98F99F0252A5AFA0014B038 /* DataBaseIO */ = {
+			isa = PBXGroup;
+			children = (
+				C92DA9CD25285BF200D40802 /* KanjiFlipper.xcdatamodeld */,
+			);
+			path = DataBaseIO;
+			sourceTree = "<group>";
+		};
+		C98F99F1252A5AFA0014B038 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C98F99F2252A5AFA0014B038 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		C98F99F3252A5AFA0014B038 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C98F99F4252A5AFA0014B038 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C98F99F5252A5AFA0014B038 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C98F99F6252A5AFA0014B038 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C98F99F7252A5AFA0014B038 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C98F99F8252A5AFA0014B038 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C98F99F9252A5AFA0014B038 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C98F99FA252A5B1A0014B038 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C92DA9D025285BF300D40802 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
