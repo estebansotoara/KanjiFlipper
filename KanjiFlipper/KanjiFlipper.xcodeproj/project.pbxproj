@@ -13,6 +13,8 @@
 		C92DA9D125285BF300D40802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92DA9D025285BF300D40802 /* Assets.xcassets */; };
 		C92DA9DF25285BF400D40802 /* KanjiFlipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9DE25285BF400D40802 /* KanjiFlipperTests.swift */; };
 		C92DA9EA25285BF400D40802 /* KanjiFlipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9E925285BF400D40802 /* KanjiFlipperUITests.swift */; };
+		C98A080F2531854E0017FE6A /* rtk_entries.json in Resources */ = {isa = PBXBuildFile; fileRef = C98A080E2531854E0017FE6A /* rtk_entries.json */; };
+		C98A0814253185DB0017FE6A /* Bundle+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A0813253185DB0017FE6A /* Bundle+Decode.swift */; };
 		C98F9A06252A60480014B038 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F9A05252A60480014B038 /* BaseViewController.swift */; };
 		C98F9A0C252A61660014B038 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F9A0B252A61660014B038 /* ViewModel.swift */; };
 		C98F9A11252A64140014B038 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F9A10252A64140014B038 /* Localizable.swift */; };
@@ -50,6 +52,8 @@
 		C92DA9E525285BF400D40802 /* KanjiFlipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanjiFlipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92DA9E925285BF400D40802 /* KanjiFlipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiFlipperUITests.swift; sourceTree = "<group>"; };
 		C92DA9EB25285BF400D40802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98A080E2531854E0017FE6A /* rtk_entries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rtk_entries.json; sourceTree = "<group>"; };
+		C98A0813253185DB0017FE6A /* Bundle+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decode.swift"; sourceTree = "<group>"; };
 		C98F9A05252A60480014B038 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C98F9A0B252A61660014B038 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C98F9A10252A64140014B038 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 		C98F99F1252A5AFA0014B038 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C98A080E2531854E0017FE6A /* rtk_entries.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 		C98F99F6252A5AFA0014B038 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C98A0813253185DB0017FE6A /* Bundle+Decode.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -368,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98A080F2531854E0017FE6A /* rtk_entries.json in Resources */,
 				C92DA9D125285BF300D40802 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +405,7 @@
 				C98F9A06252A60480014B038 /* BaseViewController.swift in Sources */,
 				C98F9A11252A64140014B038 /* Localizable.swift in Sources */,
 				C92DA9CF25285BF200D40802 /* KanjiFlipper.xcdatamodeld in Sources */,
+				C98A0814253185DB0017FE6A /* Bundle+Decode.swift in Sources */,
 				C92DA9C525285BF200D40802 /* AppDelegate.swift in Sources */,
 				C98F9A0C252A61660014B038 /* ViewModel.swift in Sources */,
 				C92DA9C725285BF200D40802 /* SceneDelegate.swift in Sources */,
