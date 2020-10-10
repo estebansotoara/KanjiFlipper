@@ -31,7 +31,7 @@ class BaseViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .white
         configureTitle()
     }
 
