@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="EntryCDMO" representedClassName="EntryCDMO" syncable="YES">
+        <attribute name="character" attributeType="String" defaultValueString=""/>
+        <attribute name="characterTypeValue" attributeType="String" defaultValueString="" customClassName="CharacterType"/>
+        <attribute name="hint" optional="YES" attributeType="String"/>
+        <attribute name="idStringValue" attributeType="String" defaultValueString=""/>
+        <attribute name="keyword" attributeType="String" defaultValueString=""/>
+        <attribute name="numberOfStrokes" attributeType="String" defaultValueString=""/>
+        <attribute name="rtkChapter" attributeType="String" defaultValueString=""/>
+        <attribute name="rtkNumber" attributeType="String" defaultValueString=""/>
+    </entity>
+    <elements>
+        <element name="EntryCDMO" positionX="-63" positionY="-18" width="128" height="28"/>
+    </elements>
 </model>
