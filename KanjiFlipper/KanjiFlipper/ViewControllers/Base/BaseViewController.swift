@@ -6,22 +6,18 @@
 //
 
 import UIKit
+import Combine
 
 class BaseViewController: UIViewController {
 
     // MARK: - Properties
-    private let viewModel: ViewModel?
+    private var cancellableBag = Set<AnyCancellable>()
+    private let viewModel: ViewModel
 
     // MARK: - Initializers
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-    }
-
-    override init(nibName nibNameOrNil: String?,
-                  bundle nibBundleOrNil: Bundle?) {
-        viewModel = nil
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
     required init?(coder: NSCoder) {
@@ -31,16 +27,20 @@ class BaseViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         configureTitle()
     }
 
     // MARK: - Configuration
     private func configureTitle() {
-        if let _ = navigationController {
-            navigationItem.title = viewModel?.viewTitle
-        } else {
-            title = viewModel?.viewTitle
-        }
+        viewModel.viewTitle
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] (title) in
+                if let _ = self?.navigationController {
+                    self?.navigationItem.title = title
+                } else {
+                    self?.title = title
+                }
+            })
+            .store(in: &cancellableBag)
     }
 }

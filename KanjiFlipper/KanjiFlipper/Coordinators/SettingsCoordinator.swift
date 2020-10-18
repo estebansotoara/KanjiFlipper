@@ -20,7 +20,8 @@ final class SettingsCoordinator: Coordinator {
 
     // MARK: - Utils
     func start() {
-        let viewController = BaseViewController()
+        let viewModel = SettingsViewModel()
+        let viewController = SettingsViewController(viewModel: viewModel)
         navigationController.pushViewController(viewController,
                                                 animated: true)
     }

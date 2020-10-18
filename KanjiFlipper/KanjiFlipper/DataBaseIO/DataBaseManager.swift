@@ -81,6 +81,16 @@ class DatabaseManager {
         }
     }
 
+    func resetDataBase() throws {
+        do {
+            try deleteAllInfo()
+            initializeDataBase()
+            print("resetDataBase success")
+        } catch {
+            print("resetDataBase failed with error: \(error)")
+        }
+    }
+
     private func saveContext(_ context: NSManagedObjectContext) {
         if context.hasChanges {
             do {

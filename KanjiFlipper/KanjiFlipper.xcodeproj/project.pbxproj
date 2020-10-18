@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92D27A7253AA815007B27A4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27A6253AA815007B27A4 /* SettingsViewController.swift */; };
+		C92D27AF253AA824007B27A4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27AE253AA824007B27A4 /* SettingsViewModel.swift */; };
+		C92D27B4253AC622007B27A4 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27B3253AC622007B27A4 /* SectionModel.swift */; };
+		C92D27BA253ACC2C007B27A4 /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27B9253ACC2C007B27A4 /* SettingsCollectionViewCell.swift */; };
+		C92D27C3253C062D007B27A4 /* SettingsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27C2253C062D007B27A4 /* SettingsString.swift */; };
+		C92D27CB253C064F007B27A4 /* Settings.strings in Resources */ = {isa = PBXBuildFile; fileRef = C92D27CA253C064F007B27A4 /* Settings.strings */; };
+		C92D27D0253C0E27007B27A4 /* IconAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27CF253C0E27007B27A4 /* IconAsset.swift */; };
 		C92DA9C525285BF200D40802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9C425285BF200D40802 /* AppDelegate.swift */; };
 		C92DA9C725285BF200D40802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9C625285BF200D40802 /* SceneDelegate.swift */; };
 		C92DA9CF25285BF200D40802 /* KanjiFlipper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9CD25285BF200D40802 /* KanjiFlipper.xcdatamodeld */; };
@@ -49,6 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C92D27A6253AA815007B27A4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C92D27AE253AA824007B27A4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		C92D27B3253AC622007B27A4 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		C92D27B9253ACC2C007B27A4 /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C92D27C2253C062D007B27A4 /* SettingsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsString.swift; sourceTree = "<group>"; };
+		C92D27CA253C064F007B27A4 /* Settings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Settings.strings; sourceTree = "<group>"; };
+		C92D27CF253C0E27007B27A4 /* IconAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconAsset.swift; sourceTree = "<group>"; };
 		C92DA9C125285BF200D40802 /* KanjiFlipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiFlipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92DA9C425285BF200D40802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C92DA9C625285BF200D40802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +118,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C92D27A4253AA7CF007B27A4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C92D27AE253AA824007B27A4 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C92D27A5253AA7E7007B27A4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C92D27A6253AA815007B27A4 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C92D27B8253ACC11007B27A4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C92D27B9253ACC2C007B27A4 /* SettingsCollectionViewCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C92D27C1253C05FE007B27A4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C92D27C2253C062D007B27A4 /* SettingsString.swift */,
+				C92D27CA253C064F007B27A4 /* Settings.strings */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		C92DA9B825285BF100D40802 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +234,7 @@
 		C98F99ED252A5AFA0014B038 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C92D27B8253ACC11007B27A4 /* Settings */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -195,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F9A04252A5FF40014B038 /* Base */,
+				C92D27A5253AA7E7007B27A4 /* Settings */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F9A10252A64140014B038 /* Localizable.swift */,
+				C92D27C1253C05FE007B27A4 /* Settings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -250,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F9A0B252A61660014B038 /* ViewModel.swift */,
+				C92D27A4253AA7CF007B27A4 /* Settings */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -285,6 +336,7 @@
 		C98F99F9252A5AFA0014B038 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C92D27B3253AC622007B27A4 /* SectionModel.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -294,6 +346,7 @@
 			children = (
 				C92DA9D025285BF300D40802 /* Assets.xcassets */,
 				C98F9A1A252A65B80014B038 /* Asset.swift */,
+				C92D27CF253C0E27007B27A4 /* IconAsset.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -409,6 +462,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92D27CB253C064F007B27A4 /* Settings.strings in Resources */,
 				C98A080F2531854E0017FE6A /* rtk_entries.json in Resources */,
 				C92DA9D125285BF300D40802 /* Assets.xcassets in Resources */,
 			);
@@ -438,8 +492,11 @@
 				C996D32D25330C1600241CB5 /* EntryModel.swift in Sources */,
 				C98A08342531944F0017FE6A /* StudyCoordinator.swift in Sources */,
 				C98F9A1B252A65B80014B038 /* Asset.swift in Sources */,
+				C92D27D0253C0E27007B27A4 /* IconAsset.swift in Sources */,
 				C98F9A16252A64C10014B038 /* Coordinator.swift in Sources */,
 				C98A082525318CF00017FE6A /* AppCoordinator.swift in Sources */,
+				C92D27B4253AC622007B27A4 /* SectionModel.swift in Sources */,
+				C92D27A7253AA815007B27A4 /* SettingsViewController.swift in Sources */,
 				C98A08652532E7930017FE6A /* EntryCDMO.swift in Sources */,
 				C98A08502532B4E20017FE6A /* DataBaseManager.swift in Sources */,
 				C98F9A06252A60480014B038 /* BaseViewController.swift in Sources */,
@@ -449,8 +506,11 @@
 				C98A082A25318D760017FE6A /* TabBarCoordinator.swift in Sources */,
 				C98A0814253185DB0017FE6A /* Bundle+Decode.swift in Sources */,
 				C98A082F253194460017FE6A /* ReviewCoordinator.swift in Sources */,
+				C92D27BA253ACC2C007B27A4 /* SettingsCollectionViewCell.swift in Sources */,
+				C92D27AF253AA824007B27A4 /* SettingsViewModel.swift in Sources */,
 				C92DA9C525285BF200D40802 /* AppDelegate.swift in Sources */,
 				C98A08392531945A0017FE6A /* SettingsCoordinator.swift in Sources */,
+				C92D27C3253C062D007B27A4 /* SettingsString.swift in Sources */,
 				C98F9A0C252A61660014B038 /* ViewModel.swift in Sources */,
 				C92DA9C725285BF200D40802 /* SceneDelegate.swift in Sources */,
 			);
