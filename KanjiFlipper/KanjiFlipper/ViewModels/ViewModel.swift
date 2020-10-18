@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import Combine
 
 protocol ViewModel: class {
-    var viewTitle: String { get }
+    var viewTitle: CurrentValueSubject<String?, Never> { get }
 }
 
 extension ViewModel {
-    var viewTitle: String? { nil }
+    var viewTitle: CurrentValueSubject<String?, Never> {
+        CurrentValueSubject<String?, Never>(nil)
+    }
 }

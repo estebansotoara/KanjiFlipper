@@ -11,6 +11,7 @@ protocol Asset {
     var imageName: String { get }
     var image: UIImage? { get }
     var templateImage: UIImage? { get }
+    var systemImage: UIImage? { get }
 }
 
 extension Asset {
@@ -20,6 +21,10 @@ extension Asset {
 
     var templateImage: UIImage? {
         return image?.withRenderingMode(.alwaysTemplate)
+    }
+
+    var systemImage: UIImage? {
+        return UIImage(systemName: self.imageName)
     }
 }
 

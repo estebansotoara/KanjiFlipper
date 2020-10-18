@@ -20,7 +20,7 @@ final class ReviewCoordinator: Coordinator {
 
     // MARK: - Utils
     func start() {
-        let viewController = BaseViewController()
+        let viewController = UIViewController()
         navigationController.pushViewController(viewController,
                                                 animated: true)
     }
