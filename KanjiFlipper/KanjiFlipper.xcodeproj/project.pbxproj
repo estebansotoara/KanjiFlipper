@@ -14,12 +14,24 @@
 		C92D27C3253C062D007B27A4 /* SettingsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27C2253C062D007B27A4 /* SettingsString.swift */; };
 		C92D27CB253C064F007B27A4 /* Settings.strings in Resources */ = {isa = PBXBuildFile; fileRef = C92D27CA253C064F007B27A4 /* Settings.strings */; };
 		C92D27D0253C0E27007B27A4 /* IconAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27CF253C0E27007B27A4 /* IconAsset.swift */; };
+		C92D27DC253C1339007B27A4 /* StudyEntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27DB253C1339007B27A4 /* StudyEntryListViewController.swift */; };
+		C92D27E5253C1361007B27A4 /* StudyEntryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27E4253C1361007B27A4 /* StudyEntryListViewModel.swift */; };
+		C92D27EB253C15A8007B27A4 /* StudyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27EA253C15A8007B27A4 /* StudyString.swift */; };
+		C92D27F0253C15B7007B27A4 /* Study.strings in Resources */ = {isa = PBXBuildFile; fileRef = C92D27EF253C15B7007B27A4 /* Study.strings */; };
+		C92D27F6253C1E19007B27A4 /* EntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27F5253C1E19007B27A4 /* EntryRepository.swift */; };
+		C92D27FC253C20C5007B27A4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D27FB253C20C5007B27A4 /* Repository.swift */; };
+		C92D2801253C2A93007B27A4 /* EntryCoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D2800253C2A93007B27A4 /* EntryCoreDataHelper.swift */; };
+		C92D2806253C2ABB007B27A4 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D2805253C2ABB007B27A4 /* CoreDataHelper.swift */; };
 		C92DA9C525285BF200D40802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9C425285BF200D40802 /* AppDelegate.swift */; };
 		C92DA9C725285BF200D40802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9C625285BF200D40802 /* SceneDelegate.swift */; };
 		C92DA9CF25285BF200D40802 /* KanjiFlipper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9CD25285BF200D40802 /* KanjiFlipper.xcdatamodeld */; };
 		C92DA9D125285BF300D40802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92DA9D025285BF300D40802 /* Assets.xcassets */; };
 		C92DA9DF25285BF400D40802 /* KanjiFlipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9DE25285BF400D40802 /* KanjiFlipperTests.swift */; };
 		C92DA9EA25285BF400D40802 /* KanjiFlipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DA9E925285BF400D40802 /* KanjiFlipperUITests.swift */; };
+		C9749D072543EC8100FE2D06 /* EntryListCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9749D062543EC8100FE2D06 /* EntryListCollectionHeaderView.swift */; };
+		C9749D1025440A3500FE2D06 /* EntryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9749D0F25440A3500FE2D06 /* EntryCollectionViewCell.swift */; };
+		C9749D1525440B0500FE2D06 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9749D1425440B0500FE2D06 /* ReusableView.swift */; };
+		C9749D1A25440B3F00FE2D06 /* UICollectionView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9749D1925440B3F00FE2D06 /* UICollectionView+ReusableView.swift */; };
 		C98A080F2531854E0017FE6A /* rtk_entries.json in Resources */ = {isa = PBXBuildFile; fileRef = C98A080E2531854E0017FE6A /* rtk_entries.json */; };
 		C98A0814253185DB0017FE6A /* Bundle+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A0813253185DB0017FE6A /* Bundle+Decode.swift */; };
 		C98A082525318CF00017FE6A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A082425318CF00017FE6A /* AppCoordinator.swift */; };
@@ -36,6 +48,8 @@
 		C98F9A16252A64C10014B038 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F9A15252A64C10014B038 /* Coordinator.swift */; };
 		C98F9A1B252A65B80014B038 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F9A1A252A65B80014B038 /* Asset.swift */; };
 		C996D32D25330C1600241CB5 /* EntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C996D32C25330C1600241CB5 /* EntryModel.swift */; };
+		C9A0F1D2254414CA00DB9F56 /* Bordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1D1254414CA00DB9F56 /* Bordered.swift */; };
+		C9A0F1D7254414F300DB9F56 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1D6254414F300DB9F56 /* BorderedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +77,14 @@
 		C92D27C2253C062D007B27A4 /* SettingsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsString.swift; sourceTree = "<group>"; };
 		C92D27CA253C064F007B27A4 /* Settings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Settings.strings; sourceTree = "<group>"; };
 		C92D27CF253C0E27007B27A4 /* IconAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconAsset.swift; sourceTree = "<group>"; };
+		C92D27DB253C1339007B27A4 /* StudyEntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyEntryListViewController.swift; sourceTree = "<group>"; };
+		C92D27E4253C1361007B27A4 /* StudyEntryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyEntryListViewModel.swift; sourceTree = "<group>"; };
+		C92D27EA253C15A8007B27A4 /* StudyString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyString.swift; sourceTree = "<group>"; };
+		C92D27EF253C15B7007B27A4 /* Study.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Study.strings; sourceTree = "<group>"; };
+		C92D27F5253C1E19007B27A4 /* EntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRepository.swift; sourceTree = "<group>"; };
+		C92D27FB253C20C5007B27A4 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		C92D2800253C2A93007B27A4 /* EntryCoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCoreDataHelper.swift; sourceTree = "<group>"; };
+		C92D2805253C2ABB007B27A4 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		C92DA9C125285BF200D40802 /* KanjiFlipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiFlipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92DA9C425285BF200D40802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C92DA9C625285BF200D40802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +97,10 @@
 		C92DA9E525285BF400D40802 /* KanjiFlipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanjiFlipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92DA9E925285BF400D40802 /* KanjiFlipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiFlipperUITests.swift; sourceTree = "<group>"; };
 		C92DA9EB25285BF400D40802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9749D062543EC8100FE2D06 /* EntryListCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListCollectionHeaderView.swift; sourceTree = "<group>"; };
+		C9749D0F25440A3500FE2D06 /* EntryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9749D1425440B0500FE2D06 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		C9749D1925440B3F00FE2D06 /* UICollectionView+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ReusableView.swift"; sourceTree = "<group>"; };
 		C98A080E2531854E0017FE6A /* rtk_entries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rtk_entries.json; sourceTree = "<group>"; };
 		C98A0813253185DB0017FE6A /* Bundle+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decode.swift"; sourceTree = "<group>"; };
 		C98A082425318CF00017FE6A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -91,6 +117,8 @@
 		C98F9A15252A64C10014B038 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C98F9A1A252A65B80014B038 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		C996D32C25330C1600241CB5 /* EntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryModel.swift; sourceTree = "<group>"; };
+		C9A0F1D1254414CA00DB9F56 /* Bordered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bordered.swift; sourceTree = "<group>"; };
+		C9A0F1D6254414F300DB9F56 /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +177,47 @@
 				C92D27CA253C064F007B27A4 /* Settings.strings */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		C92D27DA253C1307007B27A4 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				C92D27DB253C1339007B27A4 /* StudyEntryListViewController.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		C92D27E3253C134D007B27A4 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				C92D27E4253C1361007B27A4 /* StudyEntryListViewModel.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		C92D27E9253C159D007B27A4 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				C92D27EA253C15A8007B27A4 /* StudyString.swift */,
+				C92D27EF253C15B7007B27A4 /* Study.strings */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		C92D27F4253C1E07007B27A4 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				C92D27F5253C1E19007B27A4 /* EntryRepository.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		C92D27FA253C20BC007B27A4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C92D27FB253C20C5007B27A4 /* Repository.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		C92DA9B825285BF100D40802 = {
@@ -214,6 +283,15 @@
 			path = KanjiFlipperUITests;
 			sourceTree = "<group>";
 		};
+		C9749D0B254409E900FE2D06 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				C9749D062543EC8100FE2D06 /* EntryListCollectionHeaderView.swift */,
+				C9749D0F25440A3500FE2D06 /* EntryCollectionViewCell.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
 		C98A08632532E7660017FE6A /* Entry */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +305,8 @@
 		C98F99EC252A5AFA0014B038 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				C92D27FA253C20BC007B27A4 /* Base */,
+				C92D27F4253C1E07007B27A4 /* Entry */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -234,6 +314,7 @@
 		C98F99ED252A5AFA0014B038 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C9749D0B254409E900FE2D06 /* Entry */,
 				C92D27B8253ACC11007B27A4 /* Settings */,
 			);
 			path = Cells;
@@ -243,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F9A04252A5FF40014B038 /* Base */,
+				C92D27DA253C1307007B27A4 /* Study */,
 				C92D27A5253AA7E7007B27A4 /* Settings */,
 			);
 			path = ViewControllers;
@@ -252,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F9A10252A64140014B038 /* Localizable.swift */,
+				C92D27E9253C159D007B27A4 /* Study */,
 				C92D27C1253C05FE007B27A4 /* Settings */,
 			);
 			path = Strings;
@@ -262,6 +345,8 @@
 			children = (
 				C92DA9CD25285BF200D40802 /* KanjiFlipper.xcdatamodeld */,
 				C98A084F2532B4E20017FE6A /* DataBaseManager.swift */,
+				C92D2805253C2ABB007B27A4 /* CoreDataHelper.swift */,
+				C92D2800253C2A93007B27A4 /* EntryCoreDataHelper.swift */,
 			);
 			path = DataBaseIO;
 			sourceTree = "<group>";
@@ -292,6 +377,7 @@
 		C98F99F4252A5AFA0014B038 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C9A0F1D6254414F300DB9F56 /* BorderedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F9A0B252A61660014B038 /* ViewModel.swift */,
+				C92D27E3253C134D007B27A4 /* Study */,
 				C92D27A4253AA7CF007B27A4 /* Settings */,
 			);
 			path = ViewModels;
@@ -309,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				C98A0813253185DB0017FE6A /* Bundle+Decode.swift */,
+				C9749D1925440B3F00FE2D06 /* UICollectionView+ReusableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -329,6 +417,8 @@
 		C98F99F8252A5AFA0014B038 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				C9749D1425440B0500FE2D06 /* ReusableView.swift */,
+				C9A0F1D1254414CA00DB9F56 /* Bordered.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -464,6 +554,7 @@
 			files = (
 				C92D27CB253C064F007B27A4 /* Settings.strings in Resources */,
 				C98A080F2531854E0017FE6A /* rtk_entries.json in Resources */,
+				C92D27F0253C15B7007B27A4 /* Study.strings in Resources */,
 				C92DA9D125285BF300D40802 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,14 +581,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C996D32D25330C1600241CB5 /* EntryModel.swift in Sources */,
+				C9749D1525440B0500FE2D06 /* ReusableView.swift in Sources */,
 				C98A08342531944F0017FE6A /* StudyCoordinator.swift in Sources */,
 				C98F9A1B252A65B80014B038 /* Asset.swift in Sources */,
 				C92D27D0253C0E27007B27A4 /* IconAsset.swift in Sources */,
+				C92D27EB253C15A8007B27A4 /* StudyString.swift in Sources */,
+				C9749D1A25440B3F00FE2D06 /* UICollectionView+ReusableView.swift in Sources */,
 				C98F9A16252A64C10014B038 /* Coordinator.swift in Sources */,
 				C98A082525318CF00017FE6A /* AppCoordinator.swift in Sources */,
+				C92D27FC253C20C5007B27A4 /* Repository.swift in Sources */,
 				C92D27B4253AC622007B27A4 /* SectionModel.swift in Sources */,
 				C92D27A7253AA815007B27A4 /* SettingsViewController.swift in Sources */,
 				C98A08652532E7930017FE6A /* EntryCDMO.swift in Sources */,
+				C92D2801253C2A93007B27A4 /* EntryCoreDataHelper.swift in Sources */,
+				C92D27DC253C1339007B27A4 /* StudyEntryListViewController.swift in Sources */,
 				C98A08502532B4E20017FE6A /* DataBaseManager.swift in Sources */,
 				C98F9A06252A60480014B038 /* BaseViewController.swift in Sources */,
 				C98F9A11252A64140014B038 /* Localizable.swift in Sources */,
@@ -505,12 +602,19 @@
 				C98A08552532B8550017FE6A /* Entry.swift in Sources */,
 				C98A082A25318D760017FE6A /* TabBarCoordinator.swift in Sources */,
 				C98A0814253185DB0017FE6A /* Bundle+Decode.swift in Sources */,
+				C9749D1025440A3500FE2D06 /* EntryCollectionViewCell.swift in Sources */,
 				C98A082F253194460017FE6A /* ReviewCoordinator.swift in Sources */,
 				C92D27BA253ACC2C007B27A4 /* SettingsCollectionViewCell.swift in Sources */,
+				C9A0F1D2254414CA00DB9F56 /* Bordered.swift in Sources */,
+				C9749D072543EC8100FE2D06 /* EntryListCollectionHeaderView.swift in Sources */,
 				C92D27AF253AA824007B27A4 /* SettingsViewModel.swift in Sources */,
 				C92DA9C525285BF200D40802 /* AppDelegate.swift in Sources */,
+				C92D27F6253C1E19007B27A4 /* EntryRepository.swift in Sources */,
+				C92D27E5253C1361007B27A4 /* StudyEntryListViewModel.swift in Sources */,
+				C9A0F1D7254414F300DB9F56 /* BorderedView.swift in Sources */,
 				C98A08392531945A0017FE6A /* SettingsCoordinator.swift in Sources */,
 				C92D27C3253C062D007B27A4 /* SettingsString.swift in Sources */,
+				C92D2806253C2ABB007B27A4 /* CoreDataHelper.swift in Sources */,
 				C98F9A0C252A61660014B038 /* ViewModel.swift in Sources */,
 				C92DA9C725285BF200D40802 /* SceneDelegate.swift in Sources */,
 			);

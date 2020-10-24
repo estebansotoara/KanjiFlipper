@@ -20,8 +20,18 @@ final class StudyCoordinator: Coordinator {
 
     // MARK: - Utils
     func start() {
-        let viewController = UIViewController()
+        let viewModel = StudyEntryListViewModel()
+        let viewController = StudyEntryListViewController(viewModel: viewModel)
         navigationController.pushViewController(viewController,
                                                 animated: true)
+    }
+}
+
+// MARK: - Initializers
+extension StudyCoordinator: StudyEntryListViewModelDelegate {
+    func studyEntryListViewModel(_ viewModel: StudyEntryListViewModel,
+                                 didSelectEntry entry: Entry) {
+        print("StudyCoordinator: studyEntryListViewModel didSelectEntry: \(entry)")
+        //TODO: navigate to entry details view
     }
 }
