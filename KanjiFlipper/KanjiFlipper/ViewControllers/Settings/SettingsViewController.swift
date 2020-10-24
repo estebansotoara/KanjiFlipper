@@ -14,7 +14,6 @@ final class SettingsViewController: BaseViewController {
     typealias Snapshot =
         NSDiffableDataSourceSnapshot<SettingsSection, SettingsSectionItem>
 
-
     // MARK: - UI
     private lazy var collectionView: UICollectionView = {
         let config = UICollectionLayoutListConfiguration(
@@ -60,10 +59,9 @@ final class SettingsViewController: BaseViewController {
 
         let dataSource = DataSource(collectionView: collectionView) {
             (collectionView, indexPath, item) -> UICollectionViewCell? in
-            let cell: SettingsCollectionViewCell? = collectionView.dequeueReusableCell(
-                withReuseIdentifier: "SettingsCollectionViewCell",
-                for: indexPath) as? SettingsCollectionViewCell
-            cell?.titleLabel.text = item.description
+            let cell: SettingsCollectionViewCell = collectionView
+                .dequeueReusableCell(for: indexPath)
+            cell.titleLabel.text = item.description
             return cell
         }
 
@@ -95,9 +93,9 @@ final class SettingsViewController: BaseViewController {
 
         //collection view
         collectionView.register(
-            SettingsCollectionViewCell.self,
-            forCellWithReuseIdentifier: "SettingsCollectionViewCell")
+            cell: SettingsCollectionViewCell.self)
 
+        collectionView.backgroundColor = .white
         collectionView.delegate = self
         view.addSubview(collectionView)
     }

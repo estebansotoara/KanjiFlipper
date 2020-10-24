@@ -1,13 +1,13 @@
 //
-//  SettingsCollectionViewCell.swift
+//  EntryListCollectionHeaderView.swift
 //  KanjiFlipper
 //
-//  Created by AraDev on 10/16/20.
+//  Created by AraDev on 10/23/20.
 //
 
 import UIKit
 
-class SettingsCollectionViewCell: UICollectionViewCell {
+class EntryListCollectionHeaderView: UICollectionReusableView {
 
     // MARK: - UI
     let titleLabel = UILabel()
@@ -34,31 +34,36 @@ class SettingsCollectionViewCell: UICollectionViewCell {
     // MARK: - UI Setup
     private func configureSubviews() {
 
-        //content
-        contentView.backgroundColor = .white
+        //view
+        backgroundColor = .white
 
         //collection view
-        titleLabel.font = UIFont.systemFont(ofSize: 15)
-        contentView.addSubview(titleLabel)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 21)
+        addSubview(titleLabel)
     }
 
     private func configureSubviewsLayout() {
+
+        let labelHeight: CGFloat = 22
+        let bottomPadding: CGFloat = 6
         let borderPadding: CGFloat = 16
         //Title label
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             titleLabel.topAnchor
-                .constraint(equalTo: contentView.topAnchor,
+                .constraint(equalTo: self.topAnchor,
                             constant: borderPadding),
             titleLabel.bottomAnchor
-                .constraint(equalTo: contentView.bottomAnchor,
-                            constant: -borderPadding),
+                .constraint(equalTo: self.bottomAnchor,
+                            constant: -bottomPadding),
             titleLabel.leadingAnchor
-                .constraint(equalTo: contentView.leadingAnchor,
+                .constraint(equalTo: self.leadingAnchor,
                             constant: borderPadding),
             titleLabel.trailingAnchor
-                .constraint(equalTo: contentView.trailingAnchor,
-                            constant: -borderPadding)
+                .constraint(equalTo: self.trailingAnchor,
+                            constant: -borderPadding),
+            titleLabel.heightAnchor
+                .constraint(equalToConstant: labelHeight)
         ])
     }
 }

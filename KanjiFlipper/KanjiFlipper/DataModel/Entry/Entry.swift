@@ -58,4 +58,36 @@ class Entry: EntryModel, Decodable {
         self.rtkChapter = try container
             .decode(String.self, forKey: .rtkChapter)
     }
+
+    init<T: EntryModel>(model: T) {
+        self.id = model.id
+        self.character = model.character
+        self.characterType = model.characterType
+        self.keyword = model.keyword
+        self.hint = model.hint
+        self.numberOfStrokes = model.numberOfStrokes
+        self.rtkNumber = model.rtkNumber
+        self.rtkChapter = model.rtkChapter
+    }
+}
+
+extension Entry: Comparable {
+    static func < (lhs: Entry, rhs: Entry) -> Bool {
+        Int(lhs.rtkNumber) ?? 0 < Int(rhs.rtkNumber) ?? 0
+    }
+}
+
+extension Entry: Equatable {
+    static func == (lhs: Entry, rhs: Entry) -> Bool {
+        lhs.id < rhs.id
+    }
+}
+
+extension Entry: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(character)
+        hasher.combine(characterType)
+        hasher.combine(keyword)
+    }
 }

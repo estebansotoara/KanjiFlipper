@@ -60,7 +60,7 @@ class DatabaseManager {
         let entries = Bundle.main.decode([Entry].self,
                                          from: defaultEntriesFileName)
         _ = entries.map({
-            EntryCDMO(entry: $0, context: backgroundContext)
+            EntryCDMO(model: $0, context: backgroundContext)
         })
         saveContext(backgroundContext)
     }

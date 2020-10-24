@@ -43,16 +43,16 @@ class EntryCDMO: NSManagedObject, EntryModel {
     }
 
     // MARK: Initializers
-    convenience init<T: EntryModel>(entry: T, context: NSManagedObjectContext) {
+    convenience init<T: EntryModel>(model: T, context: NSManagedObjectContext) {
         self.init(context: context)
-        id = entry.id
-        character = entry.character
-        characterType = entry.characterType
-        keyword = entry.keyword
-        hint = entry.hint
-        numberOfStrokes = entry.numberOfStrokes
-        rtkNumber = entry.rtkNumber
-        rtkChapter = entry.rtkChapter
+        id = model.id
+        character = model.character
+        characterType = model.characterType
+        keyword = model.keyword
+        hint = model.hint
+        numberOfStrokes = model.numberOfStrokes
+        rtkNumber = model.rtkNumber
+        rtkChapter = model.rtkChapter
     }
 
     // MARK: - Utils

@@ -31,10 +31,12 @@ final class SettingsViewModel: ViewModel {
     // MARK: - Properties
     private var cancellableBag = Set<AnyCancellable>()
 
+    //Title
     var viewTitle: CurrentValueSubject<String?, Never> {
         CurrentValueSubject(SettingsString.settings.localized)
     }
 
+    //Sections
     @Published private var sections: [SettingsSectionModel] = []
     var sectionsPublisher: Published<[SettingsSectionModel]>.Publisher {
         $sections
@@ -47,7 +49,6 @@ final class SettingsViewModel: ViewModel {
 
     // MARK: - Configuration
     private func configureSections() {
-        print("SettingsViewModel: configureSections")
         let dataBaseSection = SettingsSectionModel(model: .dataBase,
                                                    items: [.resetDataBase])
         self.sections = [dataBaseSection]
@@ -55,7 +56,6 @@ final class SettingsViewModel: ViewModel {
 
     // MARK: - Actions
     func resetDataBase() {
-        print("SettingsViewModel: resetDataBase")
         try? DatabaseManager.shared.resetDataBase()
     }
 }
