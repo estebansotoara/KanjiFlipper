@@ -75,7 +75,7 @@ final class StudyEntryDetailsViewController: BaseViewController {
     private func configureSubviews() {
 
         //View
-        view.backgroundColor = .white
+        view.backgroundColor = .systemGray6
 
         //Keyword
         keywordLabel.font = UIFont.systemFont(ofSize: 40)

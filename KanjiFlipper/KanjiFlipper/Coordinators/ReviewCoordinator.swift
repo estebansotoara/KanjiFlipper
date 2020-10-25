@@ -20,7 +20,10 @@ final class ReviewCoordinator: Coordinator {
 
     // MARK: - Utils
     func start() {
-        let viewController = UIViewController()
+        let viewModel = ReviewEntriesViewModel()
+        //viewModel.set(delegate: self)
+        let viewController = ReviewEntriesViewController(
+            viewModel: viewModel)
         navigationController.pushViewController(viewController,
                                                 animated: true)
     }

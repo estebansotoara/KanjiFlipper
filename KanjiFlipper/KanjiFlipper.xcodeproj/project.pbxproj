@@ -52,6 +52,12 @@
 		C9A0F1D7254414F300DB9F56 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1D6254414F300DB9F56 /* BorderedView.swift */; };
 		C9A0F1E82544CC5200DB9F56 /* StudyEntryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1E72544CC5200DB9F56 /* StudyEntryDetailsViewController.swift */; };
 		C9A0F1ED2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1EC2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift */; };
+		C9A0F1FA254518DD00DB9F56 /* ReviewEntriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1F9254518DD00DB9F56 /* ReviewEntriesViewModel.swift */; };
+		C9A0F1FF254518EF00DB9F56 /* ReviewEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1FE254518EF00DB9F56 /* ReviewEntriesViewController.swift */; };
+		C9A0F205254529D000DB9F56 /* ReviewDeckInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F204254529D000DB9F56 /* ReviewDeckInfoCollectionViewCell.swift */; };
+		C9A0F20B25452C6B00DB9F56 /* ReviewString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F20A25452C6B00DB9F56 /* ReviewString.swift */; };
+		C9A0F21025452C7A00DB9F56 /* Review.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9A0F20F25452C7A00DB9F56 /* Review.strings */; };
+		C9A0F2152545371E00DB9F56 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F2142545371E00DB9F56 /* BorderedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +129,12 @@
 		C9A0F1D6254414F300DB9F56 /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 		C9A0F1E72544CC5200DB9F56 /* StudyEntryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyEntryDetailsViewController.swift; sourceTree = "<group>"; };
 		C9A0F1EC2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyEntryDetailsViewModel.swift; sourceTree = "<group>"; };
+		C9A0F1F9254518DD00DB9F56 /* ReviewEntriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewEntriesViewModel.swift; sourceTree = "<group>"; };
+		C9A0F1FE254518EF00DB9F56 /* ReviewEntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewEntriesViewController.swift; sourceTree = "<group>"; };
+		C9A0F204254529D000DB9F56 /* ReviewDeckInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDeckInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9A0F20A25452C6B00DB9F56 /* ReviewString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewString.swift; sourceTree = "<group>"; };
+		C9A0F20F25452C7A00DB9F56 /* Review.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Review.strings; sourceTree = "<group>"; };
+		C9A0F2142545371E00DB9F56 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +332,7 @@
 		C98F99ED252A5AFA0014B038 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C9A0F203254529AC00DB9F56 /* Review */,
 				C9749D0B254409E900FE2D06 /* Entry */,
 				C92D27B8253ACC11007B27A4 /* Settings */,
 			);
@@ -330,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F9A04252A5FF40014B038 /* Base */,
+				C9A0F1F72545183A00DB9F56 /* Review */,
 				C92D27DA253C1307007B27A4 /* Study */,
 				C92D27A5253AA7E7007B27A4 /* Settings */,
 			);
@@ -340,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F9A10252A64140014B038 /* Localizable.swift */,
+				C9A0F20925452C5400DB9F56 /* Review */,
 				C92D27E9253C159D007B27A4 /* Study */,
 				C92D27C1253C05FE007B27A4 /* Settings */,
 			);
@@ -384,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A0F1D6254414F300DB9F56 /* BorderedView.swift */,
+				C9A0F2142545371E00DB9F56 /* BorderedButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F9A0B252A61660014B038 /* ViewModel.swift */,
+				C9A0F1F82545189800DB9F56 /* Review */,
 				C92D27E3253C134D007B27A4 /* Study */,
 				C92D27A4253AA7CF007B27A4 /* Settings */,
 			);
@@ -453,6 +470,39 @@
 				C98F9A05252A60480014B038 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		C9A0F1F72545183A00DB9F56 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0F1FE254518EF00DB9F56 /* ReviewEntriesViewController.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		C9A0F1F82545189800DB9F56 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0F1F9254518DD00DB9F56 /* ReviewEntriesViewModel.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		C9A0F203254529AC00DB9F56 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0F204254529D000DB9F56 /* ReviewDeckInfoCollectionViewCell.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		C9A0F20925452C5400DB9F56 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0F20A25452C6B00DB9F56 /* ReviewString.swift */,
+				C9A0F20F25452C7A00DB9F56 /* Review.strings */,
+			);
+			path = Review;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -560,6 +610,7 @@
 			files = (
 				C92D27CB253C064F007B27A4 /* Settings.strings in Resources */,
 				C98A080F2531854E0017FE6A /* rtk_entries.json in Resources */,
+				C9A0F21025452C7A00DB9F56 /* Review.strings in Resources */,
 				C92D27F0253C15B7007B27A4 /* Study.strings in Resources */,
 				C92DA9D125285BF300D40802 /* Assets.xcassets in Resources */,
 			);
@@ -592,14 +643,17 @@
 				C98F9A1B252A65B80014B038 /* Asset.swift in Sources */,
 				C92D27D0253C0E27007B27A4 /* IconAsset.swift in Sources */,
 				C92D27EB253C15A8007B27A4 /* StudyString.swift in Sources */,
+				C9A0F2152545371E00DB9F56 /* BorderedButton.swift in Sources */,
 				C9749D1A25440B3F00FE2D06 /* UICollectionView+ReusableView.swift in Sources */,
 				C98F9A16252A64C10014B038 /* Coordinator.swift in Sources */,
 				C98A082525318CF00017FE6A /* AppCoordinator.swift in Sources */,
 				C92D27FC253C20C5007B27A4 /* Repository.swift in Sources */,
 				C9A0F1ED2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift in Sources */,
+				C9A0F205254529D000DB9F56 /* ReviewDeckInfoCollectionViewCell.swift in Sources */,
 				C92D27B4253AC622007B27A4 /* SectionModel.swift in Sources */,
 				C92D27A7253AA815007B27A4 /* SettingsViewController.swift in Sources */,
 				C98A08652532E7930017FE6A /* EntryCDMO.swift in Sources */,
+				C9A0F1FF254518EF00DB9F56 /* ReviewEntriesViewController.swift in Sources */,
 				C92D2801253C2A93007B27A4 /* EntryCoreDataHelper.swift in Sources */,
 				C92D27DC253C1339007B27A4 /* StudyEntryListViewController.swift in Sources */,
 				C98A08502532B4E20017FE6A /* DataBaseManager.swift in Sources */,
@@ -609,6 +663,7 @@
 				C98A08552532B8550017FE6A /* Entry.swift in Sources */,
 				C98A082A25318D760017FE6A /* TabBarCoordinator.swift in Sources */,
 				C98A0814253185DB0017FE6A /* Bundle+Decode.swift in Sources */,
+				C9A0F1FA254518DD00DB9F56 /* ReviewEntriesViewModel.swift in Sources */,
 				C9749D1025440A3500FE2D06 /* EntryCollectionViewCell.swift in Sources */,
 				C98A082F253194460017FE6A /* ReviewCoordinator.swift in Sources */,
 				C92D27BA253ACC2C007B27A4 /* SettingsCollectionViewCell.swift in Sources */,
@@ -617,6 +672,7 @@
 				C92D27AF253AA824007B27A4 /* SettingsViewModel.swift in Sources */,
 				C92DA9C525285BF200D40802 /* AppDelegate.swift in Sources */,
 				C92D27F6253C1E19007B27A4 /* EntryRepository.swift in Sources */,
+				C9A0F20B25452C6B00DB9F56 /* ReviewString.swift in Sources */,
 				C92D27E5253C1361007B27A4 /* StudyEntryListViewModel.swift in Sources */,
 				C9A0F1D7254414F300DB9F56 /* BorderedView.swift in Sources */,
 				C9A0F1E82544CC5200DB9F56 /* StudyEntryDetailsViewController.swift in Sources */,

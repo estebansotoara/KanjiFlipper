@@ -9,6 +9,8 @@ import Foundation
 
 enum IconAsset: String {
 
+    case pencil = "pencil"
+    case pencilAndOutline = "pencil.and.outline"
     case textBookClosed = "text.book.closed"
     case textBookClosedFill = "text.book.closed.fill"
     case gearshape = "gearshape"

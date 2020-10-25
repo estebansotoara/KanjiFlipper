@@ -1,0 +1,13 @@
+/* 
+  Review.strings
+  KanjiFlipper
+
+  Created by AraDev on 10/24/20.
+  
+*/
+
+"Review" = "Review";
+"Cards on deck" = "Cards on deck";
+"Due" = "Due";
+"Cards reviewed today" = "Cards reviewed today";
+"Start review session" = "Start review session";
