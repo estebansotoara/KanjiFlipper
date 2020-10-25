@@ -9,8 +9,9 @@ import Foundation
 import Combine
 
 protocol StudyEntryListViewModelDelegate: class {
-    func studyEntryListViewModel(_ viewModel: StudyEntryListViewModel,
-                                 didSelectEntry entry: Entry)
+    func studyEntryListViewModel(
+        _ viewModel: StudyEntryListViewModel,
+        showDetails detailsViewModel: StudyEntryDetailsViewModel)
 }
 
 struct StudyEntryListSection: Hashable {
@@ -36,6 +37,8 @@ final class StudyEntryListViewModel: ViewModel {
     // MARK: - Properties
     private var cancellableBag = Set<AnyCancellable>()
     private let repository = EntryRepository()
+
+    private weak var delegate: StudyEntryListViewModelDelegate?
 
     //Title
     var viewTitle: CurrentValueSubject<String?, Never> {
@@ -89,8 +92,17 @@ final class StudyEntryListViewModel: ViewModel {
             .store(in: &cancellableBag)
     }
 
+    // MARK: - Utils
+    func set(delegate: StudyEntryListViewModelDelegate) {
+        self.delegate = delegate
+    }
+
     // MARK: - Actions
     func selectItem(_ entry: StudyEntryListItem) {
         print("StudyEntryListViewModel: selectItem: \(entry)")
+
+        let viewModel = StudyEntryDetailsViewModel(entry: entry.entry,
+                                                   repository: repository)
+        delegate?.studyEntryListViewModel(self, showDetails: viewModel)
     }
 }

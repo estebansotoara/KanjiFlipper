@@ -144,7 +144,7 @@ class StudyEntryListViewController: BaseViewController {
             .store(in: &cancellableBag)
     }
 
-    // MARK: - UI Setup
+    // MARK: - UI Configuration
     private func configureSubviews() {
 
         //view

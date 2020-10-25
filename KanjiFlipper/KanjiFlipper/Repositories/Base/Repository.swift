@@ -19,11 +19,6 @@ class Repository<Element> {
         $isLoading
     }
 
-    private let dataSubjectTest = PassthroughSubject<[Element], Error>()
-    var dataPublisherTest: AnyPublisher<[Element], Error> {
-        dataSubjectTest.eraseToAnyPublisher()
-    }
-
     //Error
     let error = PassthroughSubject<Error, Never>()
 

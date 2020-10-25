@@ -21,6 +21,7 @@ final class StudyCoordinator: Coordinator {
     // MARK: - Utils
     func start() {
         let viewModel = StudyEntryListViewModel()
+        viewModel.set(delegate: self)
         let viewController = StudyEntryListViewController(viewModel: viewModel)
         navigationController.pushViewController(viewController,
                                                 animated: true)
@@ -29,9 +30,14 @@ final class StudyCoordinator: Coordinator {
 
 // MARK: - Initializers
 extension StudyCoordinator: StudyEntryListViewModelDelegate {
-    func studyEntryListViewModel(_ viewModel: StudyEntryListViewModel,
-                                 didSelectEntry entry: Entry) {
-        print("StudyCoordinator: studyEntryListViewModel didSelectEntry: \(entry)")
-        //TODO: navigate to entry details view
+    func studyEntryListViewModel(
+        _ viewModel: StudyEntryListViewModel,
+        showDetails detailsViewModel: StudyEntryDetailsViewModel) {
+        print("StudyCoordinator: studyEntryListViewModel showDetails")
+        
+        let viewController = StudyEntryDetailsViewController(
+            viewModel: detailsViewModel)
+        navigationController.pushViewController(viewController,
+                                                animated: true)
     }
 }
