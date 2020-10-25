@@ -22,7 +22,8 @@ final class StudyCoordinator: Coordinator {
     func start() {
         let viewModel = StudyEntryListViewModel()
         viewModel.set(delegate: self)
-        let viewController = StudyEntryListViewController(viewModel: viewModel)
+        let viewController = StudyEntryListViewController(
+            viewModel: viewModel)
         navigationController.pushViewController(viewController,
                                                 animated: true)
     }

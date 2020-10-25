@@ -40,12 +40,13 @@ class EntryCollectionViewCell: UICollectionViewCell {
     private func configureSubviews() {
 
         //Content
-        contentView.backgroundColor = .white
+        contentView.backgroundColor = .systemGray6
 
         //Border view
         borderView.radiusMultiplier = 16
         borderView.borderWidth = 1
-        borderView.borderColor = .darkGray
+        borderView.borderColor = .systemGray
+        borderView.backgroundColor = .white
         contentView.addSubview(borderView)
 
         //Number label

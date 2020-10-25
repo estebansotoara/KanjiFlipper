@@ -35,7 +35,7 @@ class EntryListCollectionHeaderView: UICollectionReusableView {
     private func configureSubviews() {
 
         //view
-        backgroundColor = .white
+        backgroundColor = .systemGray6
 
         //collection view
         titleLabel.font = UIFont.boldSystemFont(ofSize: 21)

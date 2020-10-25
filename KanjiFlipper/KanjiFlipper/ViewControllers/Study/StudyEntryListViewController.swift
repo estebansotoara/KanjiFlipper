@@ -13,25 +13,25 @@ class StudyEntryListViewController: BaseViewController {
         UICollectionViewDiffableDataSource<StudyEntryListSection, StudyEntryListItem>
     typealias Snapshot =
         NSDiffableDataSourceSnapshot<StudyEntryListSection, StudyEntryListItem>
-
+    
     // MARK: - UI
     private lazy var collectionView: UICollectionView = {
         return UICollectionView(
             frame: .zero,
             collectionViewLayout: self.compositionalLayout)
     }()
-
+    
     let compositionalLayout: UICollectionViewCompositionalLayout = {
         let itemsPerRow = 3
         let inset: CGFloat = 2
         let spacing = NSCollectionLayoutSpacing.fixed(inset)
-
+        
         //Item
         let itemSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1),
             heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-
+        
         //Group
         let groupSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1),
@@ -40,7 +40,7 @@ class StudyEntryListViewController: BaseViewController {
             layoutSize: groupSize,
             subitem: item,
             count: itemsPerRow)
-
+        
         //Header
         let headerItemSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1),
@@ -50,55 +50,55 @@ class StudyEntryListViewController: BaseViewController {
             elementKind: UICollectionView.elementKindSectionHeader,
             alignment: .top)
         headerItem.pinToVisibleBounds = true
-
+        
         //Section
         let section = NSCollectionLayoutSection(group: group)
         section.boundarySupplementaryItems = [headerItem]
-
+        
         //Configuration
         let config = UICollectionViewCompositionalLayoutConfiguration()
         config.interSectionSpacing = inset
-
+        
         return UICollectionViewCompositionalLayout(section: section,
                                                    configuration: config)
     }()
-
+    
     // MARK: - Properties
     private var cancellableBag = Set<AnyCancellable>()
     private let viewModel: StudyEntryListViewModel
     private var dataSource: DataSource?
-
+    
     // MARK: - Initializers
     init(viewModel: StudyEntryListViewModel) {
         self.viewModel = viewModel
         super.init(viewModel: viewModel)
-
+        
         self.tabBarItem = UITabBarItem(
             title: SettingsString.settings.localized,
             image: IconAsset.textBookClosed.systemImage,
             selectedImage: IconAsset.textBookClosedFill.systemImage)
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configureSubviews()
         configureSubviewsLayout()
-
+        
         configureDataSource()
     }
-
+    
     // MARK: - Configuration
     private func configureDataSource() {
-
+        
         let dataSource = DataSource(collectionView: collectionView) {
             (collectionView, indexPath, item) -> UICollectionViewCell? in
-
+            
             let cell: EntryCollectionViewCell = collectionView
                 .dequeueReusableCell(for: indexPath)
             cell.numberLabel.text = item.entry.rtkNumber
@@ -106,16 +106,16 @@ class StudyEntryListViewController: BaseViewController {
             cell.keywordLabel.text = item.entry.keyword
             return cell
         }
-
+        
         dataSource.supplementaryViewProvider = { [weak self]
             (collectionView, kind, indexPath) -> UICollectionReusableView? in
-
+            
             guard kind == UICollectionView.elementKindSectionHeader,
                   let section = self?.dataSource?.snapshot()
                     .sectionIdentifiers[indexPath.section] else {
                 return nil
             }
-
+            
             let header: EntryListCollectionHeaderView = collectionView
                 .dequeueReusableSupplementaryView(
                     ofKind: UICollectionView.elementKindSectionHeader,
@@ -123,15 +123,15 @@ class StudyEntryListViewController: BaseViewController {
             header.titleLabel.text = "Lesson: \(section.lessonNumber)"
             return header
         }
-
+        
         self.dataSource = dataSource
         collectionView.dataSource = dataSource
-
+        
         viewModel.sectionsPublisher
             .receive(on: DispatchQueue.main)
             .sink { (sections) in
                 print("StudyEntryListViewController: sectionsPublisher sink: \(sections.count)")
-
+                
                 var snapshot = Snapshot()
                 for section in sections {
                     snapshot.appendSections([section.model])
@@ -143,27 +143,27 @@ class StudyEntryListViewController: BaseViewController {
             }
             .store(in: &cancellableBag)
     }
-
+    
     // MARK: - UI Configuration
     private func configureSubviews() {
-
+        
         //view
-        view.backgroundColor = .white
-
+        view.backgroundColor = .systemGray6
+        
         //collection view
         collectionView.register(
             cell: EntryCollectionViewCell.self)
         collectionView.register(
             supplementaryView: EntryListCollectionHeaderView.self,
             ofKind: UICollectionView.elementKindSectionHeader)
-
-        collectionView.backgroundColor = .white
+        
+        collectionView.backgroundColor = .systemGray6
         collectionView.delegate = self
         view.addSubview(collectionView)
     }
-
+    
     private func configureSubviewsLayout() {
-
+        
         //collection view
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -180,7 +180,7 @@ class StudyEntryListViewController: BaseViewController {
 }
 
 extension StudyEntryListViewController: UICollectionViewDelegate {
-
+    
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         guard let item = dataSource?.itemIdentifier(for: indexPath) else {

@@ -89,13 +89,13 @@ final class SettingsViewController: BaseViewController {
     private func configureSubviews() {
 
         //view
-        view.backgroundColor = .white
+        view.backgroundColor = .systemGray6
 
         //collection view
         collectionView.register(
             cell: SettingsCollectionViewCell.self)
 
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .systemGray6
         collectionView.delegate = self
         view.addSubview(collectionView)
     }
