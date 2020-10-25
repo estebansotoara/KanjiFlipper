@@ -10,6 +10,9 @@ import Foundation
 enum StudyString: String {
 
     case study = "Study"
+    case lesson = "Lesson"
+    case entryNumber = "Entry number"
+    case numberOfStrokes = "Number of strokes"
 }
 
 extension StudyString: Localizable {

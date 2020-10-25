@@ -50,6 +50,7 @@ class EntryCollectionViewCell: UICollectionViewCell {
 
         //Number label
         numberLabel.font = UIFont.systemFont(ofSize: 13)
+        numberLabel.textColor = .lightGray
         contentView.addSubview(numberLabel)
 
         //Character label

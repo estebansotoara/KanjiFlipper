@@ -50,6 +50,8 @@
 		C996D32D25330C1600241CB5 /* EntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C996D32C25330C1600241CB5 /* EntryModel.swift */; };
 		C9A0F1D2254414CA00DB9F56 /* Bordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1D1254414CA00DB9F56 /* Bordered.swift */; };
 		C9A0F1D7254414F300DB9F56 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1D6254414F300DB9F56 /* BorderedView.swift */; };
+		C9A0F1E82544CC5200DB9F56 /* StudyEntryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1E72544CC5200DB9F56 /* StudyEntryDetailsViewController.swift */; };
+		C9A0F1ED2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F1EC2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		C996D32C25330C1600241CB5 /* EntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryModel.swift; sourceTree = "<group>"; };
 		C9A0F1D1254414CA00DB9F56 /* Bordered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bordered.swift; sourceTree = "<group>"; };
 		C9A0F1D6254414F300DB9F56 /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
+		C9A0F1E72544CC5200DB9F56 /* StudyEntryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyEntryDetailsViewController.swift; sourceTree = "<group>"; };
+		C9A0F1EC2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyEntryDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				C92D27DB253C1339007B27A4 /* StudyEntryListViewController.swift */,
+				C9A0F1E72544CC5200DB9F56 /* StudyEntryDetailsViewController.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				C92D27E4253C1361007B27A4 /* StudyEntryListViewModel.swift */,
+				C9A0F1EC2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -590,6 +596,7 @@
 				C98F9A16252A64C10014B038 /* Coordinator.swift in Sources */,
 				C98A082525318CF00017FE6A /* AppCoordinator.swift in Sources */,
 				C92D27FC253C20C5007B27A4 /* Repository.swift in Sources */,
+				C9A0F1ED2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift in Sources */,
 				C92D27B4253AC622007B27A4 /* SectionModel.swift in Sources */,
 				C92D27A7253AA815007B27A4 /* SettingsViewController.swift in Sources */,
 				C98A08652532E7930017FE6A /* EntryCDMO.swift in Sources */,
@@ -612,6 +619,7 @@
 				C92D27F6253C1E19007B27A4 /* EntryRepository.swift in Sources */,
 				C92D27E5253C1361007B27A4 /* StudyEntryListViewModel.swift in Sources */,
 				C9A0F1D7254414F300DB9F56 /* BorderedView.swift in Sources */,
+				C9A0F1E82544CC5200DB9F56 /* StudyEntryDetailsViewController.swift in Sources */,
 				C98A08392531945A0017FE6A /* SettingsCoordinator.swift in Sources */,
 				C92D27C3253C062D007B27A4 /* SettingsString.swift in Sources */,
 				C92D2806253C2ABB007B27A4 /* CoreDataHelper.swift in Sources */,
