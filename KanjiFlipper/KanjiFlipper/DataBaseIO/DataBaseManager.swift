@@ -15,10 +15,13 @@ class DatabaseManager {
 
     let persistentContainer: NSPersistentCloudKitContainer
     lazy var context: NSManagedObjectContext = {
-        persistentContainer.viewContext
+        persistentContainer.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        return persistentContainer.viewContext
     }()
     lazy var backgroundContext: NSManagedObjectContext = {
-        persistentContainer.newBackgroundContext()
+        let bkgContext = persistentContainer.newBackgroundContext()
+        bkgContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        return bkgContext
     }()
     private let defaultEntriesFileName = "rtk_entries.json"
 
