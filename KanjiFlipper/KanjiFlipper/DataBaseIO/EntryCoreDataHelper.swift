@@ -15,10 +15,13 @@ class EntryCoreDataHelper: CoreDataHelper {
     // MARK: - Properties
     let persistentContainer: NSPersistentCloudKitContainer
     lazy var context: NSManagedObjectContext = {
-        persistentContainer.viewContext
+        persistentContainer.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        return persistentContainer.viewContext
     }()
     lazy var backgroundContext: NSManagedObjectContext = {
-        persistentContainer.newBackgroundContext()
+        let bkgContext = persistentContainer.newBackgroundContext()
+        bkgContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        return bkgContext
     }()
 
     // MARK: - Initializers

@@ -58,6 +58,15 @@
 		C9A0F20B25452C6B00DB9F56 /* ReviewString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F20A25452C6B00DB9F56 /* ReviewString.swift */; };
 		C9A0F21025452C7A00DB9F56 /* Review.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9A0F20F25452C7A00DB9F56 /* Review.strings */; };
 		C9A0F2152545371E00DB9F56 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F2142545371E00DB9F56 /* BorderedButton.swift */; };
+		C9A0F22325462F9A00DB9F56 /* DeckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F22225462F9A00DB9F56 /* DeckModel.swift */; };
+		C9A0F22825462FA000DB9F56 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F22725462FA000DB9F56 /* Deck.swift */; };
+		C9A0F22D25462FAC00DB9F56 /* DeckCDMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F22C25462FAC00DB9F56 /* DeckCDMO.swift */; };
+		C9A0F23225462FB500DB9F56 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F23125462FB500DB9F56 /* CardModel.swift */; };
+		C9A0F23725462FBB00DB9F56 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F23625462FBB00DB9F56 /* Card.swift */; };
+		C9A0F23C25462FC500DB9F56 /* CardCDMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F23B25462FC500DB9F56 /* CardCDMO.swift */; };
+		C9A0F24125462FD200DB9F56 /* SRSEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F24025462FD200DB9F56 /* SRSEntryModel.swift */; };
+		C9A0F24625462FD800DB9F56 /* SRSEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F24525462FD800DB9F56 /* SRSEntry.swift */; };
+		C9A0F24B25462FDE00DB9F56 /* SRSEntryCDMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F24A25462FDE00DB9F56 /* SRSEntryCDMO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +144,15 @@
 		C9A0F20A25452C6B00DB9F56 /* ReviewString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewString.swift; sourceTree = "<group>"; };
 		C9A0F20F25452C7A00DB9F56 /* Review.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Review.strings; sourceTree = "<group>"; };
 		C9A0F2142545371E00DB9F56 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		C9A0F22225462F9A00DB9F56 /* DeckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckModel.swift; sourceTree = "<group>"; };
+		C9A0F22725462FA000DB9F56 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		C9A0F22C25462FAC00DB9F56 /* DeckCDMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCDMO.swift; sourceTree = "<group>"; };
+		C9A0F23125462FB500DB9F56 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		C9A0F23625462FBB00DB9F56 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C9A0F23B25462FC500DB9F56 /* CardCDMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCDMO.swift; sourceTree = "<group>"; };
+		C9A0F24025462FD200DB9F56 /* SRSEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSEntryModel.swift; sourceTree = "<group>"; };
+		C9A0F24525462FD800DB9F56 /* SRSEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSEntry.swift; sourceTree = "<group>"; };
+		C9A0F24A25462FDE00DB9F56 /* SRSEntryCDMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSEntryCDMO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +402,9 @@
 			isa = PBXGroup;
 			children = (
 				C98A08632532E7660017FE6A /* Entry */,
+				C9A0F22125462F8600DB9F56 /* Deck */,
+				C9A0F22025462F8600DB9F56 /* Card */,
+				C9A0F21F25462F8600DB9F56 /* SRSEntry */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -503,6 +524,36 @@
 				C9A0F20F25452C7A00DB9F56 /* Review.strings */,
 			);
 			path = Review;
+			sourceTree = "<group>";
+		};
+		C9A0F21F25462F8600DB9F56 /* SRSEntry */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0F24025462FD200DB9F56 /* SRSEntryModel.swift */,
+				C9A0F24525462FD800DB9F56 /* SRSEntry.swift */,
+				C9A0F24A25462FDE00DB9F56 /* SRSEntryCDMO.swift */,
+			);
+			path = SRSEntry;
+			sourceTree = "<group>";
+		};
+		C9A0F22025462F8600DB9F56 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0F23125462FB500DB9F56 /* CardModel.swift */,
+				C9A0F23625462FBB00DB9F56 /* Card.swift */,
+				C9A0F23B25462FC500DB9F56 /* CardCDMO.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		C9A0F22125462F8600DB9F56 /* Deck */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0F22225462F9A00DB9F56 /* DeckModel.swift */,
+				C9A0F22725462FA000DB9F56 /* Deck.swift */,
+				C9A0F22C25462FAC00DB9F56 /* DeckCDMO.swift */,
+			);
+			path = Deck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -642,13 +693,17 @@
 				C98A08342531944F0017FE6A /* StudyCoordinator.swift in Sources */,
 				C98F9A1B252A65B80014B038 /* Asset.swift in Sources */,
 				C92D27D0253C0E27007B27A4 /* IconAsset.swift in Sources */,
+				C9A0F23225462FB500DB9F56 /* CardModel.swift in Sources */,
 				C92D27EB253C15A8007B27A4 /* StudyString.swift in Sources */,
 				C9A0F2152545371E00DB9F56 /* BorderedButton.swift in Sources */,
+				C9A0F23C25462FC500DB9F56 /* CardCDMO.swift in Sources */,
 				C9749D1A25440B3F00FE2D06 /* UICollectionView+ReusableView.swift in Sources */,
 				C98F9A16252A64C10014B038 /* Coordinator.swift in Sources */,
 				C98A082525318CF00017FE6A /* AppCoordinator.swift in Sources */,
 				C92D27FC253C20C5007B27A4 /* Repository.swift in Sources */,
 				C9A0F1ED2544CC6C00DB9F56 /* StudyEntryDetailsViewModel.swift in Sources */,
+				C9A0F22825462FA000DB9F56 /* Deck.swift in Sources */,
+				C9A0F24625462FD800DB9F56 /* SRSEntry.swift in Sources */,
 				C9A0F205254529D000DB9F56 /* ReviewDeckInfoCollectionViewCell.swift in Sources */,
 				C92D27B4253AC622007B27A4 /* SectionModel.swift in Sources */,
 				C92D27A7253AA815007B27A4 /* SettingsViewController.swift in Sources */,
@@ -665,14 +720,19 @@
 				C98A0814253185DB0017FE6A /* Bundle+Decode.swift in Sources */,
 				C9A0F1FA254518DD00DB9F56 /* ReviewEntriesViewModel.swift in Sources */,
 				C9749D1025440A3500FE2D06 /* EntryCollectionViewCell.swift in Sources */,
+				C9A0F23725462FBB00DB9F56 /* Card.swift in Sources */,
 				C98A082F253194460017FE6A /* ReviewCoordinator.swift in Sources */,
 				C92D27BA253ACC2C007B27A4 /* SettingsCollectionViewCell.swift in Sources */,
 				C9A0F1D2254414CA00DB9F56 /* Bordered.swift in Sources */,
+				C9A0F22325462F9A00DB9F56 /* DeckModel.swift in Sources */,
+				C9A0F24B25462FDE00DB9F56 /* SRSEntryCDMO.swift in Sources */,
 				C9749D072543EC8100FE2D06 /* EntryListCollectionHeaderView.swift in Sources */,
 				C92D27AF253AA824007B27A4 /* SettingsViewModel.swift in Sources */,
 				C92DA9C525285BF200D40802 /* AppDelegate.swift in Sources */,
 				C92D27F6253C1E19007B27A4 /* EntryRepository.swift in Sources */,
 				C9A0F20B25452C6B00DB9F56 /* ReviewString.swift in Sources */,
+				C9A0F22D25462FAC00DB9F56 /* DeckCDMO.swift in Sources */,
+				C9A0F24125462FD200DB9F56 /* SRSEntryModel.swift in Sources */,
 				C92D27E5253C1361007B27A4 /* StudyEntryListViewModel.swift in Sources */,
 				C9A0F1D7254414F300DB9F56 /* BorderedView.swift in Sources */,
 				C9A0F1E82544CC5200DB9F56 /* StudyEntryDetailsViewController.swift in Sources */,

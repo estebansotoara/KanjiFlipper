@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CardCDMO" representedClassName="CardCDMO" syncable="YES">
+        <attribute name="createdDate" attributeType="Date" defaultDateTimeInterval="625379040" usesScalarValueType="NO"/>
+        <attribute name="deckIdStringValue" attributeType="String" defaultValueString=""/>
+        <attribute name="entryIdStringValue" attributeType="String" defaultValueString=""/>
+        <attribute name="idStringValue" attributeType="String" defaultValueString=""/>
+        <attribute name="updatedDate" attributeType="Date" defaultDateTimeInterval="625379040" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="idStringValue"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="DeckCDMO" representedClassName="DeckCDMO" syncable="YES">
+        <attribute name="createdDate" attributeType="Date" defaultDateTimeInterval="625379160" usesScalarValueType="NO"/>
+        <attribute name="idStringValue" attributeType="String" defaultValueString=""/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="updatedDate" attributeType="Date" defaultDateTimeInterval="625379160" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="idStringValue"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
     <entity name="EntryCDMO" representedClassName="EntryCDMO" syncable="YES">
         <attribute name="character" attributeType="String" defaultValueString=""/>
         <attribute name="characterTypeValue" attributeType="String" defaultValueString="" customClassName="CharacterType"/>
@@ -9,8 +32,31 @@
         <attribute name="numberOfStrokes" attributeType="String" defaultValueString=""/>
         <attribute name="rtkChapter" attributeType="String" defaultValueString=""/>
         <attribute name="rtkNumber" attributeType="String" defaultValueString=""/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="idStringValue"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="SRSEntryCDMO" representedClassName="SRSEntryCDMO" syncable="YES">
+        <attribute name="cardIdStringValue" attributeType="String" defaultValueString=""/>
+        <attribute name="createdDate" attributeType="Date" defaultDateTimeInterval="625379340" usesScalarValueType="NO"/>
+        <attribute name="easinessFactor" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="idStringValue" attributeType="String" defaultValueString=""/>
+        <attribute name="interval" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nextDueDate" attributeType="Date" defaultDateTimeInterval="625379340" usesScalarValueType="NO"/>
+        <attribute name="repetition" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="updatedDate" attributeType="Date" defaultDateTimeInterval="625379340" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="idStringValue"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="EntryCDMO" positionX="-63" positionY="-18" width="128" height="28"/>
+        <element name="EntryCDMO" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="DeckCDMO" positionX="-63" positionY="-27" width="128" height="103"/>
+        <element name="CardCDMO" positionX="-54" positionY="-18" width="128" height="118"/>
+        <element name="SRSEntryCDMO" positionX="-36" positionY="0" width="128" height="163"/>
     </elements>
 </model>
