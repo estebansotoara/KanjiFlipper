@@ -12,7 +12,7 @@ import CoreData
 class EntryCDMO: NSManagedObject, EntryModel {
 
     // MARK: Properties
-    @NSManaged var idStringValue: String
+    @NSManaged private var idStringValue: String
     @NSManaged var character: String
     @NSManaged private var characterTypeValue: String
     @NSManaged var keyword: String
