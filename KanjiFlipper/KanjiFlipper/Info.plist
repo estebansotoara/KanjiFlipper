@@ -56,7 +56,7 @@
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<true/>
 		<key>UIColorName</key>
-		<string>AccentColor</string>
+		<string>White</string>
 	</dict>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
